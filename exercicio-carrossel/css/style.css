@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+}
+
+html {
+    background-color: black;
+}
+
+.sectionTudo {
+    display: none;
+}
+
+.sectionTudo.selecionada {
+    display: block;
+}
+
+.featuredImage {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hide {
+    display: none;
+}
+
+.elementos {
+    position: absolute; 
+}
+
+.textoLocalidades {
+    width: 420px;
+    height: 500px;
+    background-color: whitesmoke;
+    position: relative;
+    left: 200px;
+    top: 100px;
+    border-radius: 10px;
+}
+
+.textoLocalidades h2{ 
+    margin: 50px 40px;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+.textoLocalidades p {
+    margin: 40px 40px;
+    line-height: 25px;
+    font-weight: 300;
+}
+
+.textoLocalidades a {
+    margin: 40px;
+    font-weight: 700;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.a-cherry {
+    color: #C50000;
+}
+
+.a-flowers {
+    color: #D9DD10;
+}
+
+.a-sunrise {
+    color: #A63A17;
+}
+
+.a-lakeNtrees {
+    color: #10ACDD;
+}
+
+.textoLocalidades a:hover {
+    text-decoration: underline;
+}
+
+
+.setas {
+    position: relative;
+    height: 78px;
+    bottom: 220px;
+}
+
+.seta-direita {
+    left: 90%;
+}
+
+.seta-esquerda {
+    transform: rotate(180deg);
+    left: 2%;
+}
+
+.opacidadeSetas {
+    opacity: 0.6;
+}
+
+@media (max-width: 1300px) {
+    .textoLocalidades {
+        left: 15%;
+    }    
+
+    .seta-direita {
+        left: 85%;
+    }    
+}
+
+@media (max-width: 768px) {
+    .textoLocalidades {
+        left: 18%;
+        width: 390px;
+        height: 500px;
+    }    
+
+    .seta-direita {
+        left: 80%;
+    }    
+}
+
+@media (max-width: 576px) {
+    .featuredImage {
+        width: 100%;
+        height: 100%;
+    }
+
+    .textoLocalidades {
+        left: 10%;
+        width: 350px;
+        height: 450px;
+    }    
+
+    .textoLocalidades h2{ 
+        margin: 20px 40px;
+        font-size: 35px;
+        font-weight: 400;
+    }
+    
+    .textoLocalidades p {
+        margin: 20px 40px;
+        line-height: 25px;
+        font-weight: 300;
+    }
+    
+    .textoLocalidades a {
+        margin: 40px;
+        font-weight: 700;
+        font-size: 18px;
+        text-decoration: none;
+    }
+ 
+    .setas {
+        position: relative;
+        top: 150px;
+    }
+    
+    .seta-direita {
+        left: 73%;
+    }
+    
+    .seta-esquerda {
+        transform: rotate(180deg);
+        left: 2%;
+    }
+    
+}

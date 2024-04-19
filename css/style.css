@@ -174,7 +174,7 @@ section .sectionTudo.selecionada {
  
     .setas {
         position: relative;
-        top: 150px;
+        bottom: 110px;
     }
     
     .seta-direita {
